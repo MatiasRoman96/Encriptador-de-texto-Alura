@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="esp">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="./reset.css/reset.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+                        
+    </head>
+
+    <body>
+        <header id="logo">
+            <img src="./imagenes/Logo.png">
+        </header>
+
+        <main>
+            <section class="bloque1">
+                <textarea type="text" class="input-text" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>                             
+                <div class="botones">
+                    <h6 class="texto1">
+                        <img  class="vector" src="./imagenes/Vector.png">
+                        Solo letras minúsculas y sin acentos
+                    </h6>
+                    <button type="button" onclick="btnencriptar(),desaparecer()" class="boton-encriptar">Encriptar</button>
+                    <button type="button" onclick="btndesencriptar(),desaparecer()" class="boton-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="bloque2">
+                <div id="fase1">
+                    <img class="muneco" src="./imagenes/Muñeco.png" width="250px" alt="muneco">
+                    <h6>Ningún mensaje fue encontrado</h6>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div id="fase2">
+                    <textarea type="text" id="output-text" cols="18" rows="50"></textarea>
+                    <button type="button" onclick="copyToClipBoard()" class="boton-copiar">Copiar</button>
+                </div>
+                
+            </section>
+        </main>
+        <script src="script.js"></script>
+
+    <footer>
+        <p>Matias Roman - 2022 - AluraChallenge</p>
+    </footer>
+   
+        
+    </body>
+
+
+
+</html>
